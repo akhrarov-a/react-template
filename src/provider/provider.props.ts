@@ -2,13 +2,14 @@ import { Store } from 'redux';
 import { History } from 'history';
 
 /**
- * Props
+ * <Provider /> props
  */
 type ProviderProps = {
   /**
    * App store
    */
   store: Store;
+
   /**
    * Router history
    */

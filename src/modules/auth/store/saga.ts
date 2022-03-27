@@ -1,6 +1,9 @@
 import { Saga } from 'redux-chill';
 import { login } from './actions';
 
+/**
+ * Auth saga
+ */
 class AuthSaga {
   /**
    * Login
@@ -19,6 +22,4 @@ class AuthSaga {
   }
 }
 
-const sagas = [new AuthSaga()];
-
-export { AuthSaga, sagas };
+export { AuthSaga };

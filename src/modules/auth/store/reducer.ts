@@ -2,8 +2,8 @@ import { reducer } from 'redux-chill';
 import { AuthState } from './state';
 
 /**
- * Auth state
+ * Auth reducer
  */
-const auth = reducer(new AuthState());
+const authReducer = reducer(new AuthState());
 
-export { auth };
+export { authReducer };

@@ -25,11 +25,7 @@
       "@app": ["./src/modules/app/index"],
       "@app/*": ["./src/modules/app/*"],
       "@auth": ["./src/modules/auth/index"],
-      "@auth/*": ["./src/modules/auth/*"],
-      "@main-page": ["./src/modules/main-page/index"],
-      "@main-page/*": ["./src/modules/main-page/*"],
-      "@profile": ["./src/modules/profile/index"],
-      "@profile/*": ["./src/modules/profile/*"]
+      "@auth/*": ["./src/modules/auth/*"]
     }
   },
   "include": ["./src/**/*", "./typings/**/*"],

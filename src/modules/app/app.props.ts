@@ -1,5 +1,5 @@
 /**
- * Props
+ * <App /> props
  */
 type AppProps = {};
 

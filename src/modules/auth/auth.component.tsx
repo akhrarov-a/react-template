@@ -1,13 +1,13 @@
-import { Button, hoc } from '@core';
-import * as React from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { useAuth } from './auth.props';
-import * as styles from './auth.scss';
+import { Button, hoc } from '@core';
+import { useAuthProps } from './auth.props';
+import styles from './auth.scss';
 
 /**
  * <Auth />
  */
-const Auth = hoc(useAuth, ({ example, pathname, t }) => (
+const Auth = hoc(useAuthProps, ({ example, pathname, t }) => (
   <div className={styles.auth}>
     <div>{t('wow')}</div>
     <div>{t('auth.kek')}</div>

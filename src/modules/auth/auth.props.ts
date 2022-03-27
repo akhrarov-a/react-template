@@ -1,15 +1,17 @@
+import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useTranslationSource } from '@core';
 import { State } from '@store';
-import { useEffect } from 'react';
 import { login } from './store';
 
 /**
- * Use auth
+ * <Auth /> props
  */
-const useAuth = ({}) => {
+const useAuthProps = ({}) => {
   const dispatch = useDispatch();
+
   const { t } = useTranslationSource('auth', require('./auth.lang.json'));
+
   const { pathname } = useSelector((state: State) => state.router.location);
 
   useEffect(() => {
@@ -23,4 +25,4 @@ const useAuth = ({}) => {
   };
 };
 
-export { useAuth };
+export { useAuthProps };
